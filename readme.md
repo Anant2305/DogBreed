@@ -1,25 +1,24 @@
-Dog Breeds API
+<h1>Dog Breeds API</h1>
 
+<h4>External API</h4> - https://dog.ceo/
 
-External API - https://dog.ceo/
+<h3>Get External API and display:-</h3>
 
-Get External API and display:-
+<li>All - localhost\breed</li>
+<li>One Breed List - localhost\breed\hound</li>
+<li>Random Breed - localhost\breed\random</li>
+<li>Breed Image - localhost\breed\hound\image</li>
 
-All - localhost\breed
-One Breed List - localhost\breed\hound
-Random Breed - localhost\breed\random
-Breed Image - localhost\breed\hound\image
+<p>The data collected will save to MySql Database if not already in database.</p>
 
-The data collected will save to MySql Database if not already in database.
+<h3>Data is not stored in Redis. </h3>
+<p>Never used Redis before and was unable to add it on.</p>
 
-Data is not stored in Redis. 
-Never used Redis before and was unable to add it on.
+<h2>Issues with the environment when setting up</h2>
 
-Issues with the environment when setting up
+<h3>Guzzlehttp</h3>
+<p>It took me a while to set up as error message displayed was composer memory issues.
+After trying to update php.ini to add extra allocation which did not make any difference I then had to revert to 6.0 to make it work.</p>
 
-Guzzlehttp
-It took me a while to set up as error message displayed was composer memory issues.
-After trying to update php.ini to add extra allocation which did not make any difference I then had to revert to 6.0 to make it work.
-
-Database Issues
-I am using MAMP on my local machine and had to amend database port to get it to work
+<h3>Database Issues</h3>
+<p>I am using MAMP on my local machine and had to amend database port to get it to work</p>
